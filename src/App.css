@@ -1,38 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
+  background: #ddd;
+  width: 50%;
+  margin: 50px auto;
+  min-height: 400px;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App h1 {
+  margin-bottom: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.addItems input {
+  width: 50%;
+  height: 40px;
+  padding: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addItems button {
+  height: 45px;
+  width: 50px;
+  cursor: pointer;
 }
-
-.App-link {
-  color: #61dafb;
+.showItems {
+  margin-top: 40px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.singleItems {
+  position: relative;
+  padding-bottom: 15px;
+}
+.singleItems h3 {
+  display: inline-block;
+  width: 388px;
+  background: green;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px;
+  text-align: left;
+}
+.singleItems .icon {
+  position: absolute;
+  top: 43%;
+  right: 160px;
+  transform: translateY(-50%);
+  color: #fff;
+  cursor: pointer;
+}
+.clearData {
+  padding-bottom: 50px;
+}
+.clearData button {
+  background: red;
+  border: none;
+  padding: 0;
+  width: 120px;
+  height: 40px;
+  color: #fff;
+  cursor: pointer;
 }
