@@ -35,7 +35,7 @@ const Todo = () => {
                     onChange={(e)=> setInputData(e.target.value)}
                 
                 />
-                <button type="button" title="Add Item" onClick={addItem}>Add</button>
+                <button type="submit" title="Add Item" onClick={addItem}>Add</button>
             </div>
 
             <div className="showItems">
