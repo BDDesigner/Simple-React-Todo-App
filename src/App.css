@@ -1,61 +1,94 @@
-* {
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Poppins:wght@700&display=swap");
+
+*{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-.App {
-  background: #ddd;
-  width: 50%;
-  margin: 50px auto;
-  min-height: 400px;
+
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+h1{
+  font-family: 'Monoton', cursive;
+  margin: 15px 0;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
   text-align: center;
 }
-.App h1 {
-  margin-bottom: 25px;
-}
-.addItems input {
-  width: 50%;
-  height: 40px;
-  padding: 20px;
-}
-.addItems button {
-  height: 45px;
-  width: 50px;
-  cursor: pointer;
-}
-.showItems {
-  margin-top: 40px;
-}
-.singleItems {
-  position: relative;
-  padding-bottom: 15px;
-}
-.singleItems h3 {
-  display: inline-block;
-  width: 388px;
+.todoItemBox input,
+.singleTodo {
   background: green;
+  font-size: 25px;
   color: #fff;
-  font-size: 18px;
-  padding: 15px;
+  padding: 20px 15px;
+  display: inline-block;
+  min-width: 350px;
   text-align: left;
-}
-.singleItems .icon {
-  position: absolute;
-  top: 43%;
-  right: 160px;
-  transform: translateY(-50%);
-  color: #fff;
+  margin: 10px;
+  transition: 0.4s;
   cursor: pointer;
 }
-.clearData {
-  padding-bottom: 50px;
-}
-.clearData button {
-  background: red;
+.todoItemBox input {
+  cursor: default;
   border: none;
-  padding: 0;
-  width: 120px;
-  height: 40px;
+}
+.singleTodo:hover {
+  background: rgb(241, 155, 155);
   color: #fff;
+}
+.btn {
+  background: green;
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px;
   cursor: pointer;
+  transition: 0.4s;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.btn:hover {
+  background: red;
+}
+input[type="text"] {
+  background-color: #f5c5c5;
+  border: 2px solid #cccccc;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -ms-transition: border linear 0.2s, box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+  transition: border linear 0.2s, box-shadow linear 0.2s;
+}
+input[type="text"]:focus {
+  border-color: rgba(82, 168, 236, 0.8);
+  outline: 0;
+}
+input.add-text {
+  height: 35px;
+  width: 294px;
+  padding: 10px;
+}
+input[type="submit"] {
+  height: 58px;
+  margin-left: 10px;
+  background: #f5c5c5;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.spaceing {
+  margin: 20px 0 10px 0;
+  border-color: red;
 }
